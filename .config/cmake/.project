@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Project Name="mcu_timer">
+    <Description/>
+    <LinkedResources/>
+
+    <!-- Specify the headers in your project -->
+    <VirtualDirectory Name="Headers">
+        <!-- Include header files here -->
+        <File Name="header_file.h"/>
+        <File Name="another_header_file.h"/>
+    </VirtualDirectory>
+
+    <!-- Specify the sources in your project -->
+    <VirtualDirectory Name="Sources">
+        <!-- Include source files here -->
+        <File Name="main.cpp"/>
+        <File Name="source_file.cpp"/>
+        <File Name="another_source_file.cpp"/>
+    </VirtualDirectory>
+</CodeLite_Project>
+

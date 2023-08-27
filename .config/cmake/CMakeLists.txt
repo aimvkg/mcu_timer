@@ -58,8 +58,6 @@ target_link_libraries(${CMAKE_PROJECT_NAME} ${LIBRARIES})
 target_compile_definitions(${CMAKE_PROJECT_NAME} PUBLIC -DImTextureID=ImU64)
 # Set the output name of the executable (optional)
 set_target_properties(${CMAKE_PROJECT_NAME} PROPERTIES OUTPUT_NAME ${CMAKE_PROJECT_NAME})
-# Create a custom .project file with headers
-configure_file(./.project.in ./.project)
 
 
 

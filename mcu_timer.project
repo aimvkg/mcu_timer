@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Project Name="mcu_timer" InternalType="" Version="11000">
+      <VirtualDirectory Name="libs">
+        <VirtualDirectory Name="imgui">
+          <VirtualDirectory Name="include">
+            <File Name="./app/libs/imgui/src/imgui.cpp"/>
+            <File Name="./app/libs/imgui/src/imgui_demo.cpp"/>
+            <File Name="./app/libs/imgui/src/imgui_draw.cpp"/>
+            <File Name="./app/libs/imgui/src/imgui_impl_glfw.cpp"/>
+            <File Name="./app/libs/imgui/src/imgui_impl_vulkan.cpp"/>
+            <File Name="./app/libs/imgui/src/imgui_tables.cpp"/>
+            <File Name="./app/libs/imgui/src/imgui_widgets.cpp"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="src">
+            <File Name="./app/libs/imgui/include/imconfig.h"/>
+            <File Name="./app/libs/imgui/include/imgui.h"/>
+            <File Name="./app/libs/imgui/include/imgui_internal.h"/>
+            <File Name="./app/libs/imgui/include/imgui_impl_glfw.h"/>
+            <File Name="./app/libs/imgui/include/imgui_impl_vulkan.h"/>
+            <File Name="./app/libs/imgui/include/imstb_rectpack.h"/>
+            <File Name="./app/libs/imgui/include/imstb_textedit.h"/>
+            <File Name="./app/libs/imgui/include/imstb_truetype.h"/>
+          </VirtualDirectory>
+        </VirtualDirectory>
+        <VirtualDirectory Name="glfw">
+            <VirtualDirectory Name="include">
+              <File Name="./app/libs/glfw/include/xkb_unicode.h"/>
+              <File Name="./app/libs/glfw/include/linux_joystick.h"/>
+              <File Name="./app/libs/glfw/include/internal.h"/>
+              <File Name="./app/libs/glfw/include/posix_poll.h"/>
+              <File Name="./app/libs/glfw/include/platform.h"/>
+              <File Name="./app/libs/glfw/include/null_joystick.h"/>
+              <File Name="./app/libs/glfw/include/glfw3native.h"/>
+              <File Name="./app/libs/glfw/include/posix_time.h"/>
+              <File Name="./app/libs/glfw/include/x11_platform.h"/>
+              <File Name="./app/libs/glfw/include/posix_thread.h"/>
+              <File Name="./app/libs/glfw/include/null_platform.h"/>
+              <File Name="./app/libs/glfw/include/mappings.h"/>
+              <File Name="./app/libs/glfw/include/glfw3.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="src">
+              <File Name="./app/libs/glfw/src/glx_context.c"/>
+              <File Name="./app/libs/glfw/src/linux_joystick.c"/>
+              <File Name="./app/libs/glfw/src/input.c"/>
+              <File Name="./app/libs/glfw/src/x11_init.c"/>
+              <File Name="./app/libs/glfw/src/vulkan.c"/>
+              <File Name="./app/libs/glfw/src/posix_poll.c"/>
+              <File Name="./app/libs/glfw/src/wl_monitor.c"/>
+              <File Name="./app/libs/glfw/src/null_joystick.c"/>
+              <File Name="./app/libs/glfw/src/posix_module.c"/>
+              <File Name="./app/libs/glfw/src/monitor.c"/>
+              <File Name="./app/libs/glfw/src/wgl_context.c"/>
+              <File Name="./app/libs/glfw/src/osmesa_context.c"/>
+              <File Name="./app/libs/glfw/src/win32_thread.c"/>
+              <File Name="./app/libs/glfw/src/win32_init.c"/>
+              <File Name="./app/libs/glfw/src/context.c"/>
+              <File Name="./app/libs/glfw/src/wl_window.c"/>
+              <File Name="./app/libs/glfw/src/x11_monitor.c"/>
+              <File Name="./app/libs/glfw/src/win32_window.c"/>
+              <File Name="./app/libs/glfw/src/egl_context.c"/>
+              <File Name="./app/libs/glfw/src/win32_joystick.c"/>
+              <File Name="./app/libs/glfw/src/null_window.c"/>
+              <File Name="./app/libs/glfw/src/init.c"/>
+              <File Name="./app/libs/glfw/src/posix_thread.c"/>
+              <File Name="./app/libs/glfw/src/x11_window.c"/>
+              <File Name="./app/libs/glfw/src/null_monitor.c"/>
+              <File Name="./app/libs/glfw/src/xkb_unicode.c"/>
+              <File Name="./app/libs/glfw/src/win32_time.c"/>
+              <File Name="./app/libs/glfw/src/posix_time.c"/>
+              <File Name="./app/libs/glfw/src/win32_module.c"/>
+              <File Name="./app/libs/glfw/src/window.c"/>
+              <File Name="./app/libs/glfw/src/wl_init.c"/>
+              <File Name="./app/libs/glfw/src/platform.c"/>
+              <File Name="./app/libs/glfw/src/win32_monitor.c"/>
+              <File Name="./app/libs/glfw/src/null_init.c"/>
+            </VirtualDirectory>
+        </VirtualDirectory>
+        <VirtualDirectory Name="vulkan">
+            <VirtualDirectory Name="include"/>
+            <VirtualDirectory Name="src"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="include">
+        <File Name="./app/include/app.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="src">
+        <File Name="./app/src/app.cpp"/>
+        <File Name="./app/src/main.cpp"/>
+      </VirtualDirectory>
+  <Settings Type="">
+    <GlobalSettings>
+      <Compiler Options="" C_Options="" Assembler="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="">
+        <LibraryPath Value="."/>
+      </Linker>
+      <ResourceCompiler Options=""/>
+    </GlobalSettings>
+    <Configuration Name="Debug" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g" C_Options="-g" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="./build/debug/bin/$(ProjectName)" IntermediateDirectory="./" Command="./$(ProjectName)" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="./build/debug/bin" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <BuildSystem Name="Default"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="yes">
+        <RebuildCommand>/usr/bin/gmake -f$(ProjectPath)/Makefile -j 64 clean &amp;&amp; /usr/bin/gmake -f$(ProjectPath)/Makefile -j 64</RebuildCommand>
+        <CleanCommand>/usr/bin/gmake -f$(ProjectPath)/Makefile -j 64 clean</CleanCommand>
+        <BuildCommand>/usr/bin/gmake -f$(ProjectPath)/Makefile -j 64</BuildCommand>
+        <PreprocessFileCommand/>
+        <SingleFileCommand>/usr/bin/gmake -f$(ProjectPath)/Makefile -B $(CurrentFileFullName).o</SingleFileCommand>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName/>
+        <WorkingDirectory>$(WorkspacePath)</WorkingDirectory>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no" EnableCpp14="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+  </Settings>
+</CodeLite_Project>

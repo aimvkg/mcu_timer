@@ -1,0 +1,3 @@
+/home/aim/Workspace/mcu_timer/.config/cmake/CMakeFiles/mcu_timer.dir
+/home/aim/Workspace/mcu_timer/.config/cmake/CMakeFiles/edit_cache.dir
+/home/aim/Workspace/mcu_timer/.config/cmake/CMakeFiles/rebuild_cache.dir

@@ -18,6 +18,7 @@
 #define GLFW_INCLUDE_VULKAN
 #include <GLFW/glfw3.h>
 #include <vulkan/vulkan.h>
+#include "include/app.h"
 //#include <vulkan/vulkan_beta.h>
 
 // [Win32] Our example includes a copy of glfw3.lib pre-compiled with VS2010 to maximize ease of testing and compatibility with old VS compilers.
@@ -568,10 +569,31 @@ int main(int, char**)
         // 3. Show another simple window.
         if (show_another_window)
         {
-            ImGui::Begin("Another Window", &show_another_window);   // Pass a pointer to our bool variable (the window will have a closing button that will clear the bool when clicked)
-            ImGui::Text("Hello from another window!");
-            if (ImGui::Button("Close Me"))
-                show_another_window = false;
+            ImGui::Begin("Timer Calculator", &show_another_window);   // Pass a pointer to our bool variable (the window will have a closing button that will clear the bool when clicked)
+			
+			static bool counter_0 = false;
+			static bool counter_1 = false;
+			static bool counter_2 = false;
+			static float counter_value_0 = false;
+			static float counter_value_1 = false;
+			static float counter_value_2 = false;
+			const char* frequency_items[] = Time::Frequence::frequencyUnitMapping[].unitName;
+			int frequency_measurement_selected = 0;
+			ImGui::Columns(3);
+			ImGui::Checkbox("Counter 0", &counter_0);
+			ImGui::Checkbox("Counter 1", &counter_1);
+			ImGui::Checkbox("Counter 2", &counter_2);
+			ImGui::NextColumn();
+			ImGui::SliderFloat("Desired Value C0", &counter_value_0, 0.0f, 999.999f);
+			ImGui::SameLine();
+			if(ImGui::Combo("FQ C0", frequency_measurement_selected, frequency_items, IM_ARRAYSIZE(frequency_items))){}
+			ImGui::SliderFloat("Desired Value C1", &counter_value_1, 0.0f, 999.999f);
+			ImGui::SameLine();
+			if(ImGui::Combo("FQ C1", frequency_measurement_selected, frequency_items, IM_ARRAYSIZE(frequency_items))){}
+			ImGui::SameLine();
+			ImGui::SliderFloat("Desired Value C2", &counter_value_2, 0.0f, 999.999f);
+			if(ImGui::Combo("FQ C2", frequency_measurement_selected, frequency_items, IM_ARRAYSIZE(frequency_items))){}
+			ImGui::Columns(1);
             ImGui::End();
         }
 
